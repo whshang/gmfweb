@@ -15,7 +15,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/gmf.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -85,19 +85,18 @@
     <!-- About Section -->
     <section id="about" class="container content-section text-center">
         <div class="row">
-			<h2>关于金魔方</h2>
 	        <div class="col-md-4">
-	          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="80" height="80">
+	          <h1><span class="glyphicon glyphicon-education" aria-hidden="true"></span></h1>
 	          <h3>更专业</h3>
 	          <p>机构/大神的平均收益一定大于散户</p>
 	        </div><!-- /.col-lg-4 -->
 	        <div class="col-md-4">
-	          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="80" height="80">
+	          <h1><span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span></h1>
 	          <h3>更集中</h3>
 	          <p>20%的机构/大神的平均收益远超平均</p>
 	        </div><!-- /.col-lg-4 -->
 	        <div class="col-md-4">
-	          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="80" height="80">
+	          <h1><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></h1>
 	          <h3>更安全</h3>
 	          <p>专业团队，更多风控指标保障资金安全.</p>
 		</div><!-- /.row -->
@@ -110,7 +109,7 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>产品下载</h2>
                     <p>你可以订阅我们的公众号，以便第一时间收到消息</p>
-                    <a href="#" class="btn btn-default btn-lg"><i class="fa fa-wechat fa-fw"></i> <span class="network-name">微信公众号</span></a>
+                       <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target=".modal-wechat"><i class="fa fa-wechat fa-fw"></i> <span class="network-name">微信公众号</span></button>
                 </div>
             </div>
         </div>
@@ -119,36 +118,145 @@
     <!-- Contact Section -->
     <section id="contact" class="container content-section text-center">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>联系金魔方</h2>
-                <p>如有任何意见建议，请随时通过以下方式联系我们!</p>
-                <p><a href="mailto:feedback@goldmf.com">feedback@goldmf.com</a>
+            <div class="col-lg-10 col-lg-offset-1">
+                <h2>加入我们</h2>
+                <p>如果您也和我们一样，怀揣对金融的敬畏，对创新的梦想，对互联网改变世界的憧憬，金魔方期待您的加入！</p>
+                <p><a href="mailto:hr@goldmf.com">hr@goldmf.com</a>
                 </p>
-                <ul class="list-inline banner-social-buttons">
+                <ul class="list-inline">
                     <li>
-                        <a href="#" class="btn btn-default btn-lg"><i class="fa fa-wechat fa-fw"></i> <span class="network-name">微信公众号</span></a>
+                       <button type="button" class="btn btn-default" data-toggle="modal" data-target=".modal-hr-backend">后端工程师</button>
                     </li>
                     <li>
-                        <a href="#" class="btn btn-default btn-lg"><i class="fa fa-weibo fa-fw"></i> <span class="network-name">新浪微博</span></a>
+                       <button type="button" class="btn btn-default" data-toggle="modal" data-target=".modal-hr-frontend">前端工程师</button>
                     </li>
                     <li>
-                        <a href="#" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                       <button type="button" class="btn btn-default" data-toggle="modal" data-target=".modal-hr-android">Android开发工程师</button>
                     </li>
                     <li>
-                        <a href="#" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                       <button type="button" class="btn btn-default" data-toggle="modal" data-target=".modal-hr-ios">iOS开发工程师</button>
+                    </li>
+                    <li>
+                       <button type="button" class="btn btn-default" data-toggle="modal" data-target=".modal-hr-pm">高级产品经理</button>
+                    </li>
+                    <li>
+                       <button type="button" class="btn btn-default" data-toggle="modal" data-target=".modal-hr-ui">视觉设计师</button>
+                    </li>
+                    <li>
+                       <button type="button" class="btn btn-default" data-toggle="modal" data-target=".modal-hr-riskmanager">风控主管</button>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
-
-    <!-- Map Section -->
-    <div id="map"></div>
-
+<div class="modal fade modal-wechat" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-sm">
+	<div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title" id="mySmallModalLabel">微信公众号</h4>
+        </div>
+        <div class="modal-body">
+          <center><img src="img/wechat-qr.png" /><br/>扫描二维码关注我们</center>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade modal-hr-backend" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+	<div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title" id="mySmallModalLabel">招聘后端工程师</h4>
+        </div>
+        <div class="modal-body">
+          这是一段后端工程师的招聘需求
+        </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade modal-hr-frontend" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+	<div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title" id="mySmallModalLabel">招聘前端工程师</h4>
+        </div>
+        <div class="modal-body">
+          这是一段前端工程师的招聘需求
+        </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade modal-hr-android" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+	<div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title" id="mySmallModalLabel">招聘Android开发工程师</h4>
+        </div>
+        <div class="modal-body">
+          这是一段Android开发工程师的招聘需求
+        </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade modal-hr-ios" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+	<div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title" id="mySmallModalLabel">招聘iOS开发工程师</h4>
+        </div>
+        <div class="modal-body">
+          这是一段iOS开发工程师的招聘需求
+        </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade modal-hr-pm" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+	<div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title" id="mySmallModalLabel">高级产品经理</h4>
+        </div>
+        <div class="modal-body">
+          这是一段高级产品经理的招聘需求
+        </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade modal-hr-ui" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+	<div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title" id="mySmallModalLabel">视觉设计师</h4>
+        </div>
+        <div class="modal-body">
+          这是一段视觉设计师的招聘需求
+        </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade modal-hr-riskmanager" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+	<div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title" id="mySmallModalLabel">风控主管</h4>
+        </div>
+        <div class="modal-body">
+          这是一段风控主管的招聘需求
+        </div>
+      </div>
+  </div>
+</div>
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; goldmf.com 2014</p>
+            <p>Copyright &copy; goldmf.com 2015</p>
         </div>
     </footer>
 
@@ -160,9 +268,6 @@
 
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
-
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
