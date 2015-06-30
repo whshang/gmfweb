@@ -56,9 +56,8 @@ a:focus {
 
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
-    background-color: #000;
+    background-color: rgba(0,0,0,.8);
 }
 
 .navbar-custom .navbar-brand {
@@ -140,7 +139,7 @@ a:focus {
 .intro {
     display: table;
     width: 100%;
-    height: auto;
+    height: 100%;
     padding: 100px 0;
     text-align: center;
     color: #fff;
@@ -302,8 +301,6 @@ a:focus {
 
 .btn {
     border-radius: 0;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -345,9 +342,21 @@ ul.banner-social-buttons {
         margin-bottom: 0;
     }
     
-    .modal{
-	    
+    .contact-list li{
+	    margin-bottom: 10px;
+	    width: 49%;
     }
+    
+    .contact-list li button{
+	    width: 100%;
+    }
+	#about {
+		padding: 40px 20px;
+	}
+    
+	#about h1{
+		margin-top: 2em;
+	}
 }
 
 footer {
@@ -390,4 +399,11 @@ body {
 
 .modal-header{
 	border: none;
+}
+
+#about h3{
+	margin: 0 0 5px;
+}
+#about p{
+	color: rgba(255,255,255,0.6);
 }
