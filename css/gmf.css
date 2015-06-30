@@ -24,14 +24,14 @@ h6 {
 }
 
 p {
-    margin: 0 0 25px;
+    margin: 0 0 10px;
     font-size: 14px;
     line-height: 1.5;
 }
 
 @media(min-width:768px) {
     p {
-        margin: 0 0 35px;
+        margin: 0 0 15px;
         font-size: 16px;
         line-height: 1.6;
     }
@@ -337,6 +337,10 @@ ul.banner-social-buttons {
     ul.banner-social-buttons li:last-child {
         margin-bottom: 0;
     }
+    
+    .modal{
+	    
+    }
 }
 
 footer {
@@ -371,22 +375,7 @@ body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
 
-.modal {
-  text-align: center;
-}
 
-.modal:before {
-  display: inline-block;
-  vertical-align: middle;
-  content: " ";
-  height: 100%;
-}
-
-.modal-dialog {
-  display: inline-block;
-  text-align: left;
-  vertical-align: middle;
-}
 
 .modal-content{
 	color: #333;
